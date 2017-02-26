@@ -38,8 +38,7 @@ namespace _4SideShape
             set { _side2 = value; }
         }
 
-
-        public void test()
-        { }
+        //-----------------------------Methods
+        //public abstract double DiameterCalculate(int side1, int side2);
     }
 }

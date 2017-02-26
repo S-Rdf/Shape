@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace _4SideShape
 {
-    class Diamond : _4SideShape
+    public abstract class Diamond : _4SideShape
     {
-        public Diamond(int diameter1, int diameter2):base(diameter1,diameter2) 
+        public  Diamond(int diameter1, int diameter2):base(diameter1,diameter2) 
         {
         }
 
@@ -23,9 +19,21 @@ namespace _4SideShape
             return 4*(SideCalculate(diameter1, diameter2));           
         }
 
-        private double SideCalculate(int diameter1, int diameter2)
+        private  double SideCalculate(int diameter1, int diameter2)
         {
             return (Math.Sqrt(Math.Pow(diameter1, 2) + Math.Pow(diameter2, 2)))/2;
         }
+
+        
+        public int Angle(int angle1)
+        {
+            return (180 - angle1);
+        }
+
+        public void Angle (int angle1, int angle2)
+        {
+
+        }
+
     }
 }

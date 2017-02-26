@@ -21,5 +21,10 @@ namespace _4SideShape
         {
             return 4*side;
         }
+
+        public double DiameterCalculate(int side)
+        {
+            return Math.Sqrt(Math.Pow(side, 2) + Math.Pow(side, 2));
+        }
     }
 }
